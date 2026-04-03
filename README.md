@@ -131,11 +131,6 @@ git clone https://github.com/Harsha200517/lru-cache-visualizer
 index.html
 ---
 
-## Live Demo
-
-https://harsha200517.github.io/lru-cache-visualizer
-
----
 
 ## How LRU Works — Walkthrough
 
