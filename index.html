@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LRU Cache Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>LRU Cache Visualizer</h1>
+
+<div class="controls">
+    <input type="number" id="key" placeholder="Enter Key">
+    <input type="number" id="value" placeholder="Enter Value">
+    <button onclick="put()">Add</button>
+
+    <br><br>
+
+    <input type="number" id="getKey" placeholder="Enter Key to Access">
+    <button onclick="get()">Access</button>
+</div>
+
+<!-- Vertical Cache -->
+<div id="cache" class="vertical"></div>
+
+<div class="stats">
+    <p>Cache Hits: <span id="hits">0</span></p>
+    <p>Cache Misses: <span id="misses">0</span></p>
+</div>
+
+<!-- Notification -->
+<div id="notification"></div>
+
+<!-- Activity Log -->
+<div class="log-container">
+    <h3>Recent Actions</h3>
+    <button onclick="clearLog()">Clear</button>
+    <ul id="log"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
